@@ -17,8 +17,9 @@ namespace March2021Algorithms
             string[] multipleInputs = { "abc", "abcc", "aabbcd", "abcdefghhgfedecba", "aabbccddeefghi","aabbc" };
             foreach (var _input in multipleInputs)
             {
-                Console.WriteLine($"input : {_input}");
-                manager.checkStringIsValid(_input);
+                
+                var result =  manager.checkStringIsValid(_input);
+                Console.WriteLine($"input : {_input} is a valid string : {result}");
                 Console.WriteLine();
             }
 
