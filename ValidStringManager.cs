@@ -39,19 +39,27 @@ namespace March2021Algorithms
                     var removeCharacter = removalGroups.First();
                     
                     Console.WriteLine($"Attempt to remove");
-                    if (removeCharacter.Count() > key)
+                    if (removeCharacter.First().Count() > key)
                     {
-                        if ((removeCharacter.Count() - 1) == key)
+                        if ((removeCharacter.First().Count() - 1) == key)
                         {
-                            Console.WriteLine($"Yes - Valid String {removeCharacter.Key} {(removeCharacter.Count() - 1) }");
+                            Console.WriteLine($"Yes - Valid String {removeCharacter.Key} { key}");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"No");
                         }
 
                     }
                     else
                     {
-                        if ((removeCharacter.Count() - 1) == 0)
+                        if ((removeCharacter.First().Count() - 1) == 0)
                         {
-                            Console.WriteLine($"Yes - Valid String {removeCharacter.Key} {(removeCharacter.Count() - 1) }");
+                            Console.WriteLine($"Yes - Valid String {removeCharacter.Key} { 0 }");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"No");
                         }
 
                     }

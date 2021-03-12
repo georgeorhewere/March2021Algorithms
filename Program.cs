@@ -14,7 +14,7 @@ namespace March2021Algorithms
         static void testValidString()
         {
             ValidStringManager manager = new ValidStringManager();
-            string[] multipleInputs = { "abc", "abcc", "aabbcd", "abcdefghhgfedecba", "aabbccddeefghi" };
+            string[] multipleInputs = { "abc", "abcc", "aabbcd", "abcdefghhgfedecba", "aabbccddeefghi","aabbc" };
             foreach (var _input in multipleInputs)
             {
                 Console.WriteLine($"input : {_input}");
